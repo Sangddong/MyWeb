@@ -1,0 +1,95 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    max-width: 75%;
+    margin: auto;
+}
+.Slide-wrap{
+    /*position*/
+    margin: auto;
+    /*design*/
+    width: 250px;
+}
+.imageList{
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden; 
+    padding: 0;
+}
+.image{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all, 0.5s;
+}
+.Slide-wrap img{
+    margin: 0% auto;
+    max-width: 100%;
+}
+[name='slide'] {display: none;}
+[id='slide01']:checked ~ .imageList .image {
+    transform: translateX(0);
+    animation: slide01 10s infinite;
+}
+[id='slide02']:checked ~ .imageList .image {
+    transform: translateX(-100%);
+    animation: slide02 10s infinite;
+}
+[id='slide03']:checked ~ .imageList .image {
+    transform: translateX(-200%);
+    animation: slide03 10s infinite;
+}
+[id='slide04']:checked ~ .imageList .image {
+    transform: translateX(-300%);
+    animation: slide04 10s infinite;
+}
+@keyframes slide01 {
+    0% {left:0%;} 23% {left:0%;} 25% {left:-100%;}
+    48% {left:-100%;} 50% {left:-200%;} 73% {left:-200%;}
+    75% {left:-300%;} 98% {left:-300%;} 100% {left:0%;}
+}
+@keyframes slide02 {
+    0% {left:0%;} 23% {left:0%;} 25% {left:-100%;}
+    48% {left:-100%;} 50% {left:-200%;} 73% {left:-200%;}
+    75% {left:100%;} 98% {left:100%;} 100% {left:0%;}
+}
+@keyframes slide03 {
+    0% {left:0%;} 23% {left:0%;} 25% {left:-100%;}
+    48% {left:-100%;} 50% {left:200%;} 73% {left:200%;}
+    75% {left:100%;} 98% {left:100%;} 100% {left:0%;}
+}
+@keyframes slide04 {
+    0% {left:0%;} 23% {left:0%;} 25% {left:300%;}
+    48% {left:300%;} 50% {left:200%;} 73% {left:200%;}
+    75% {left:100%;} 98% {left:100%;} 100% {left:0%;}
+}
+
+.Inform-wrap {
+    /*position*/
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: auto;
+    /*design*/
+    max-width: max-content;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.434);
+}
+.Inform1{
+        /*position*/
+        padding-left:20px;
+        margin: auto;
+        /*design*/
+        line-height: 130%;
+}
+.Inform2{
+    /*position*/
+    padding-left:40px;
+    padding-right:20px;
+    margin: auto;
+    /*design*/
+    line-height: 130%;
+}

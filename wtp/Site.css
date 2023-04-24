@@ -1,0 +1,25 @@
+.link-wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    max-width: 100%;
+}
+.link-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    width: 70%;
+    margin: auto;
+}
+.site_image{
+    max-width:100px;
+    margin: 20px;
+}
+.site_ex{
+    width:80%;
+    max-height:fit-content;
+    margin: auto;
+    line-height: 130%;
+}
